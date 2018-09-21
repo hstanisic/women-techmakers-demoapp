@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F20E8F121556AA700F639D2 /* TvShowService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F20E8ED21556AA700F639D2 /* TvShowService.swift */; };
+		0F20E8F221556AA700F639D2 /* TvShowServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F20E8EF21556AA700F639D2 /* TvShowServiceMock.swift */; };
+		0F20E8F321556AA700F639D2 /* TvShows.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F20E8F021556AA700F639D2 /* TvShows.json */; };
 		0F2F7EBF2153BF68004F179F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2F7EBE2153BF68004F179F /* AppDelegate.swift */; };
 		0F2F7ECB2153BF68004F179F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F2F7EC92153BF68004F179F /* LaunchScreen.storyboard */; };
 		0F2F7ED62153BF68004F179F /* WorkshopDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2F7ED52153BF68004F179F /* WorkshopDemoTests.swift */; };
@@ -15,13 +18,7 @@
 		0F2F7EF12153C9AC004F179F /* PopularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2F7EF02153C9AC004F179F /* PopularViewController.swift */; };
 		0F2F7EF42153D242004F179F /* TvShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2F7EF32153D242004F179F /* TvShow.swift */; };
 		0F2F7EF92153D9D9004F179F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2F7EF82153D9D9004F179F /* SearchViewController.swift */; };
-		0F2F7EFE2153DE41004F179F /* TVShowViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F2F7EFC2153DE41004F179F /* TVShowViewCell.xib */; };
-		0F2F7EFF2153DE41004F179F /* TVShowViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2F7EFD2153DE41004F179F /* TVShowViewCell.swift */; };
 		0F2F7F012153E11F004F179F /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2F7F002153E11F004F179F /* Helpers.swift */; };
-		0F8EB5D02155530C00CD1D7C /* TvShowService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8EB5CB2155530C00CD1D7C /* TvShowService.swift */; };
-		0F8EB5D12155530C00CD1D7C /* TvShowServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8EB5CD2155530C00CD1D7C /* TvShowServiceMock.swift */; };
-		0F8EB5D22155530C00CD1D7C /* TvShows.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F8EB5CE2155530C00CD1D7C /* TvShows.json */; };
-		0FA192062155214B00A51CD4 /* TvShowDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA192052155214B00A51CD4 /* TvShowDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F20E8ED21556AA700F639D2 /* TvShowService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvShowService.swift; sourceTree = "<group>"; };
+		0F20E8EF21556AA700F639D2 /* TvShowServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvShowServiceMock.swift; sourceTree = "<group>"; };
+		0F20E8F021556AA700F639D2 /* TvShows.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TvShows.json; sourceTree = "<group>"; };
 		0F2F7EBB2153BF68004F179F /* WorkshopDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkshopDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F2F7EBE2153BF68004F179F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F2F7ECA2153BF68004F179F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,13 +47,7 @@
 		0F2F7EF02153C9AC004F179F /* PopularViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularViewController.swift; sourceTree = "<group>"; };
 		0F2F7EF32153D242004F179F /* TvShow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvShow.swift; sourceTree = "<group>"; };
 		0F2F7EF82153D9D9004F179F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		0F2F7EFC2153DE41004F179F /* TVShowViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TVShowViewCell.xib; sourceTree = "<group>"; };
-		0F2F7EFD2153DE41004F179F /* TVShowViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVShowViewCell.swift; sourceTree = "<group>"; };
 		0F2F7F002153E11F004F179F /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
-		0F8EB5CB2155530C00CD1D7C /* TvShowService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvShowService.swift; sourceTree = "<group>"; };
-		0F8EB5CD2155530C00CD1D7C /* TvShowServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvShowServiceMock.swift; sourceTree = "<group>"; };
-		0F8EB5CE2155530C00CD1D7C /* TvShows.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TvShows.json; sourceTree = "<group>"; };
-		0FA192052155214B00A51CD4 /* TvShowDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +68,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F20E8EC21556AA700F639D2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0F20E8ED21556AA700F639D2 /* TvShowService.swift */,
+				0F20E8EE21556AA700F639D2 /* Mock */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0F20E8EE21556AA700F639D2 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				0F20E8EF21556AA700F639D2 /* TvShowServiceMock.swift */,
+				0F20E8F021556AA700F639D2 /* TvShows.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		0F2F7EB22153BF68004F179F = {
 			isa = PBXGroup;
 			children = (
@@ -95,7 +107,7 @@
 		0F2F7EBD2153BF68004F179F /* WorkshopDemo */ = {
 			isa = PBXGroup;
 			children = (
-				0F8EB5CA2155530C00CD1D7C /* Service */,
+				0F20E8EC21556AA700F639D2 /* Service */,
 				0F2F7EFA2153DE11004F179F /* View */,
 				0F2F7EF52153D376004F179F /* Helpers */,
 				0F2F7EF22153D20C004F179F /* Model */,
@@ -122,7 +134,6 @@
 			children = (
 				0F2F7EF02153C9AC004F179F /* PopularViewController.swift */,
 				0F2F7EF82153D9D9004F179F /* SearchViewController.swift */,
-				0FA192052155214B00A51CD4 /* TvShowDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -146,37 +157,9 @@
 		0F2F7EFA2153DE11004F179F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0F2F7EFB2153DE41004F179F /* Cells */,
 				0F2F7EE02153C147004F179F /* Main.storyboard */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		0F2F7EFB2153DE41004F179F /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				0F2F7EFC2153DE41004F179F /* TVShowViewCell.xib */,
-				0F2F7EFD2153DE41004F179F /* TVShowViewCell.swift */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		0F8EB5CA2155530C00CD1D7C /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				0F8EB5CB2155530C00CD1D7C /* TvShowService.swift */,
-				0F8EB5CC2155530C00CD1D7C /* Mock */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		0F8EB5CC2155530C00CD1D7C /* Mock */ = {
-			isa = PBXGroup;
-			children = (
-				0F8EB5CD2155530C00CD1D7C /* TvShowServiceMock.swift */,
-				0F8EB5CE2155530C00CD1D7C /* TvShows.json */,
-			);
-			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,9 +247,8 @@
 			files = (
 				0F2F7EE12153C147004F179F /* Main.storyboard in Resources */,
 				0F2F7EE32153C17D004F179F /* Assets.xcassets in Resources */,
+				0F20E8F321556AA700F639D2 /* TvShows.json in Resources */,
 				0F2F7ECB2153BF68004F179F /* LaunchScreen.storyboard in Resources */,
-				0F8EB5D22155530C00CD1D7C /* TvShows.json in Resources */,
-				0F2F7EFE2153DE41004F179F /* TVShowViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,14 +266,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F2F7EFF2153DE41004F179F /* TVShowViewCell.swift in Sources */,
 				0F2F7EF42153D242004F179F /* TvShow.swift in Sources */,
-				0F8EB5D02155530C00CD1D7C /* TvShowService.swift in Sources */,
 				0F2F7EF92153D9D9004F179F /* SearchViewController.swift in Sources */,
 				0F2F7EF12153C9AC004F179F /* PopularViewController.swift in Sources */,
-				0FA192062155214B00A51CD4 /* TvShowDetailsViewController.swift in Sources */,
 				0F2F7F012153E11F004F179F /* Helpers.swift in Sources */,
-				0F8EB5D12155530C00CD1D7C /* TvShowServiceMock.swift in Sources */,
+				0F20E8F121556AA700F639D2 /* TvShowService.swift in Sources */,
+				0F20E8F221556AA700F639D2 /* TvShowServiceMock.swift in Sources */,
 				0F2F7EBF2153BF68004F179F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,26 +19,11 @@ final class SearchViewController: UIViewController {
 
     override public func viewDidLoad() {
         super.viewDidLoad()
-        initialize()
-    }
-
-    private func initialize() {
-        tableView.rowHeight = 200
         tableView.tableFooterView = UIView()
-        registerCells()
-    }
-
-    private func registerCells() {
-        tableView.register(UINib(nibName: TVShowViewCell.identifier, bundle: nil), forCellReuseIdentifier: TVShowViewCell.identifier)
     }
 
     private func tvShow(for indexPath: IndexPath) -> TvShow? {
         return dataSource?.items[indexPath.row]
-    }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let controller = segue.destination as! TVShowDetialsViewController
-        controller.tvShow = sender as? TvShow
     }
 }
 
@@ -65,9 +50,10 @@ extension SearchViewController: UISearchBarDelegate {
 extension SearchViewController: UITableViewDataSource {
 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier:TVShowViewCell.identifier, for: indexPath) as! TVShowViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier:"DefaultCell", for: indexPath)
         guard let tvShow = tvShow(for: indexPath) else { return cell }
-        cell.configure(with: tvShow)
+        cell.textLabel?.text = tvShow.name
+        cell.detailTextLabel?.text = "Rating: \(String(format: "%.1f", tvShow.rating))"
         return cell
     }
 
@@ -85,6 +71,9 @@ extension SearchViewController: UITableViewDelegate {
 
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let tvShow = tvShow(for: indexPath) else { return }
-        performSegue(withIdentifier: "SearchToDetails", sender: tvShow)
+
+        let alertController = UIAlertController(title: tvShow.name, message: tvShow.overview, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alertController, animated: true)
     }
 }

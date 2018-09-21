@@ -14,9 +14,10 @@ struct TvShow: Codable {
     var overview: String
     var poster: String?
     var thumbnail: String?
+    var rating: Double
 
     private enum CodingKeys: String, CodingKey {
-        case id, name, overview, poster = "poster_path", thumbnail = "backdrop_path"
+        case id, name, overview, poster = "poster_path", thumbnail = "backdrop_path", rating = "vote_average"
     }
 
     init(from decoder: Decoder) throws {
@@ -26,6 +27,7 @@ struct TvShow: Codable {
         id = try container.decode(Int64.self, forKey: .id)
         overview = try container.decode(String.self, forKey: .overview)
         name = try container.decode(String.self, forKey: .name)
+        rating = try container.decode(Double.self, forKey: .rating)
     }
 
     private static func fullUrl(for path: String?) -> String? {

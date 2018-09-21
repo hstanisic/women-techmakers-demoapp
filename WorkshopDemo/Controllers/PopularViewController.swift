@@ -16,7 +16,7 @@ public class PopularViewController: UITableViewController {
 
     override public func viewDidLoad() {
         super.viewDidLoad()
-        initialize()
+        tableView.tableFooterView = UIView()
         loadPopular()
     }
 
@@ -27,24 +27,15 @@ public class PopularViewController: UITableViewController {
         }
     }
 
-    private func initialize() {
-        tableView.rowHeight = 200
-        tableView.tableFooterView = UIView()
-        registerCells()
-    }
-
     private func tvShow(for indexPath: IndexPath) -> TvShow? {
         return dataSource?.items[indexPath.row]
     }
 
-    private func registerCells() {
-        tableView.register(UINib(nibName: TVShowViewCell.identifier, bundle: nil), forCellReuseIdentifier: TVShowViewCell.identifier)
-    }
-
     public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier:TVShowViewCell.identifier, for: indexPath) as! TVShowViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier:"DefaultCell", for: indexPath)
         guard let tvShow = tvShow(for: indexPath) else { return cell }
-        cell.configure(with: tvShow)
+        cell.textLabel?.text = tvShow.name
+        cell.detailTextLabel?.text = "Rating: \(String(format: "%.1f", tvShow.rating))"
         return cell
     }
 
@@ -57,13 +48,11 @@ public class PopularViewController: UITableViewController {
         return itemsCount
     }
 
-    public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let controller = segue.destination as! TVShowDetialsViewController
-        controller.tvShow = sender as? TvShow
-    }
-
     public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let tvShow = tvShow(for: indexPath) else { return }
-        performSegue(withIdentifier: "PopularToDetails", sender: tvShow)
+
+        let alertController = UIAlertController(title: tvShow.name, message: tvShow.overview, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alertController, animated: true)
     }
 }
