@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iRA-sm-UhV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Baskerville.ttc">
+            <string>Baskerville-Italic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="evK-VX-B2r">
+            <objects>
+                <viewController storyboardIdentifier="Splash" id="iRA-sm-UhV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qdm-Mb-aht">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="television" translatesAutoresizingMaskIntoConstraints="NO" id="oEy-EZ-gnS">
+                                <rect key="frame" x="87.5" y="143.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="5NP-6J-dRm"/>
+                                    <constraint firstAttribute="width" constant="200" id="x7n-SX-B4L"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Women Techmakers demo app" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REM-jN-JOo">
+                                <rect key="frame" x="0.0" y="507" width="375" height="126"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="126" id="6mn-f4-XxN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Baskerville-Italic" family="Baskerville" pointSize="43"/>
+                                <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.38431372549019605" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="REM-jN-JOo" firstAttribute="trailing" secondItem="ihX-Aw-Bmo" secondAttribute="trailing" id="gCk-aL-tuf"/>
+                            <constraint firstItem="ihX-Aw-Bmo" firstAttribute="bottom" secondItem="REM-jN-JOo" secondAttribute="bottom" constant="34" id="iaA-iS-7AK"/>
+                            <constraint firstItem="REM-jN-JOo" firstAttribute="leading" secondItem="ihX-Aw-Bmo" secondAttribute="leading" id="wFN-LU-IYP"/>
+                            <constraint firstItem="oEy-EZ-gnS" firstAttribute="centerY" secondItem="ihX-Aw-Bmo" secondAttribute="centerY" constant="-100" id="wME-FC-qoO"/>
+                            <constraint firstItem="oEy-EZ-gnS" firstAttribute="centerX" secondItem="ihX-Aw-Bmo" secondAttribute="centerX" id="y0m-5N-XQh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ihX-Aw-Bmo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nBr-md-HGS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1775.2" y="-570.76461769115451"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="television" width="256" height="256"/>
+    </resources>
+</document>
